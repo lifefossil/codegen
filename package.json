@@ -1,0 +1,33 @@
+{
+  "name": "codegen",
+  "version": "1.0.0",
+  "description": "generate project code template.",
+  "bin": {
+    "codegen": "/bin/main.js"
+  },
+  "scripts": {
+    "build": "rollup --config rollup.config.js",
+    "link": "npm link"
+  },
+  "keywords": [
+    "codegen"
+  ],
+  "author": "oliver",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-typescript": "^11.1.2",
+    "@types/node": "^20.5.0",
+    "eslint": "^8.47.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.1",
+    "rollup": "^3.28.0",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@octokit/rest": "^20.0.1",
+    "commander": "^11.0.0",
+    "dotenv": "^16.3.1"
+  }
+}
